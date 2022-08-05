@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "lib": ["deno.window"],
+    "strict": true
+  },
+  "importMap": "import_map.json",
+  "lint": {
+    "files": {
+      "include": ["src/"],
+      "exclude": ["build/"]
+    },
+    "rules": {
+      "tags": ["recommended"],
+      "include": ["ban-untagged-todo"],
+      "exclude": ["no-unused-vars"]
+    }
+  },
+  "fmt": {
+    "files": {
+      "include": ["src/"],
+      "exclude": ["build/"]
+    },
+    "options": {
+      "lineWidth": 120,
+    }
+  },
+  "test": {
+    "files": {
+      "include": ["src/"],
+      "exclude": ["build/"]
+    }
+  }
+}
